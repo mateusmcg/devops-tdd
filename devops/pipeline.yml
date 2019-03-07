@@ -1,0 +1,20 @@
+pool:
+  vmImage: 'Ubuntu 16.04'
+
+pr:
+  branches:
+    include:
+    - master
+
+trigger:
+  branches:
+    include:
+    - master
+  
+variables:
+  buildConfiguration: 'Release'
+
+steps:
+- script: |
+    dotnet build --configuration $(buildConfiguration)
+    dotnet test --configuration $(buildConfiguration) --no-build
