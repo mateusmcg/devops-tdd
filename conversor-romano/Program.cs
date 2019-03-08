@@ -2,11 +2,12 @@
 
 namespace conversor_romano
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var calculos = new Calculos();
+            calculos.converterInteiroRomano(1);
         }
     }
 }
