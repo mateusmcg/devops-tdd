@@ -7,7 +7,7 @@ namespace conversor_romano
         static void Main(string[] args)
         {
             var calculos = new Calculos();
-            calculos.converterInteiroRomano(1);
+            calculos.converterInteiroRomano(5);
         }
     }
 }

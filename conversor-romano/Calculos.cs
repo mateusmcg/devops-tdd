@@ -24,7 +24,7 @@ namespace conversor_romano
             if (valor >= 1000)
             {
                 inteiro = valor / 1000;
-                valor = inteiro % 1000;
+                valor = valor % 1000;
                 for (int i = inteiro; i > 0; i--)
                     romano = romano + "M";
             }
@@ -32,7 +32,7 @@ namespace conversor_romano
             if (valor >= 500)
             {
                 inteiro = valor / 500;
-                valor = inteiro % 500;
+                valor = valor % 500;
                 for (int i = inteiro; i > 0; i--)
                     romano = romano + "D";
             }
@@ -41,7 +41,7 @@ namespace conversor_romano
             if (valor >= 100)
             {
                 inteiro = valor / 100;
-                valor = inteiro % 100;
+                valor = valor % 100;
                 for (int i = inteiro; i > 0; i--)
                     romano = romano + "C";
             }
@@ -50,7 +50,7 @@ namespace conversor_romano
             if (valor >= 50)
             {
                 inteiro = valor / 50;
-                valor = inteiro % 50;
+                valor = valor % 50;
                 for (int i = inteiro; i > 0; i--)
                     romano = romano + "L";
             }
@@ -58,7 +58,7 @@ namespace conversor_romano
             if (valor >= 10)
             {
                 inteiro = valor / 10;
-                valor = inteiro % 10;
+                valor = valor % 10;
                 for (int i = inteiro; i > 0; i--)
                     romano = romano + "X";
             }
@@ -66,7 +66,7 @@ namespace conversor_romano
             if (valor >= 5)
             {
                 inteiro = valor / 5;
-                valor = inteiro % 5;
+                valor = valor % 5;
                 for (int i = inteiro; i > 0; i--)
                     romano = romano + "V";
             }
@@ -75,7 +75,7 @@ namespace conversor_romano
             if (valor >= 1)
             {
                 inteiro = valor / 1;
-                valor = inteiro % 1;
+                valor = valor % 1;
                 for (int i = inteiro; i > 0; i--)
                     romano = romano + "I";
             }
